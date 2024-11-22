@@ -1,0 +1,11 @@
+.layout {
+    /* padding: 20px; */
+    background-color: var(--layout);
+}
+
+.container {
+    display: flex;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    background-color: var(--container);
+}

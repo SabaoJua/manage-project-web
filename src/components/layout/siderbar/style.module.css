@@ -1,0 +1,89 @@
+.siderbar {
+    width: 250px;
+    height: 100vh;
+    border-right: 2px solid #e4e4e4;
+}
+
+.siderbarContentLink {
+    padding: 20px;
+}
+
+.siderbarLinks {
+    padding: 30px 0;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.siderbarLinksTitle {
+    display: block;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.siderbarLink,
+.siderbarLinkActive {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.siderbarLink:hover {
+    background-color: #ccc;
+}
+
+.siderbarLinkActive {
+    background-color: #CEDAF2;
+}
+
+.siderbarLink .siderbarLinkIcon {
+    color: #313131;
+}
+
+.siderbarLinkActive .siderbarLinkIcon {
+    color: #4270C6;
+}
+
+.siderbarLink .siderbarLinkText {
+    color: #555;
+    font-weight: 600;
+}
+
+.siderbarLinkActive .siderbarLinkText {
+    color: #4270C6;
+    font-weight: 600;
+}
+
+
+.contentModeDark {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.buttonModeDark {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EDEDED;
+    padding: 10px 30px;
+    border-radius: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buttonModeDark::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: -1;
+}
