@@ -95,7 +95,6 @@
 }
 
 .mainContent {
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -151,6 +150,7 @@
 
 .projectInfor {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
