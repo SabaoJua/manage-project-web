@@ -97,7 +97,7 @@ export default function Home() {
           >
             <option value="aguardando">Aguardando</option>
             <option value="em desenvolvimento">Em desenvolvimento</option>
-            <option value="concluido">Concluído</option>
+            <option value="desenvolvido">Concluído</option>
           </select>
         </div>
         <div className="mb-3">
