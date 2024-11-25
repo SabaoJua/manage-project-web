@@ -9,7 +9,6 @@ export default function Header() {
                     <h3>Israel Rodrigues</h3>
                     <span>Fullstack Develop</span>
                 </div>
-                <div className={styles.userContentIcon}>b</div>
             </div>
         </div>
     );
