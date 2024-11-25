@@ -1,10 +1,22 @@
 import HeaderContent from "./Header";
 import styles from "./style.module.css";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import Context from "../../../context/Context";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Content() {
+  const router = useRouter();
   const [projects, setProjects] = useState([]);
+
+  // const handleClick = (id) => {
+  //   // Passa os parâmetros através do estado
+  //   router.push({
+  //     pathname: '/projeto', // a rota que você quer acessar
+  //     query: { id: id }, // os parâmetros
+  //   });
+  // };
 
   const fetchProjects = async () => {
     try {
@@ -33,9 +45,7 @@ export default function Content() {
           <div>
             <h3>Projetos</h3>
             <span>
-              Você tem{" "}
-              <span className={styles.textActive}>{projects.length}</span>{" "}
-              projeto
+              Você tem <span className={styles.textActive}>{projects.length}</span> projeto
             </span>
             <div className="offcanvas"></div>
           </div>
@@ -49,7 +59,10 @@ export default function Content() {
             projects.map((project, index) => 
               <div key={index} className={styles.mainContent}>
                 <div className={styles.project}>
-                  <h3>{project.name}</h3>
+                  {/* <h3 className="cursor-pointer" onClick={() => handleClick(project.id)}>{project.name}</h3> */}
+                  <Link href={`/projeto/${project.id}`}>
+                    <h3>{project.name}</h3>
+                  </Link>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
                     ducimus a ad quaerat fugiat.

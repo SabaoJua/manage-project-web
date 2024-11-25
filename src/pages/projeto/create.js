@@ -97,7 +97,7 @@ export default function Home() {
           >
             <option value="aguardando">Aguardando</option>
             <option value="em desenvolvimento">Em desenvolvimento</option>
-            <option value="desenvolvido">Concluído</option>
+            <option value="concluido">Concluído</option>
           </select>
         </div>
         <div className="mb-3">
@@ -119,19 +119,6 @@ export default function Home() {
           Enviar
         </button>
       </form>
-
-      <div className="mt-10">
-        <h1>Projetos</h1>
-        <ul>
-          {projects.length === 0 ? (
-            <li>Carregando projetos...</li>
-          ) : (
-            projects.map((project, index) => (
-              <li key={index}>{project.name}</li>
-            ))
-          )}
-        </ul>
-      </div>
     </div>
   );
 }
